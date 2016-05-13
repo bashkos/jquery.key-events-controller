@@ -39,18 +39,23 @@ $(function () {
         $result.append($item);
     });
 
-    $tracked.on('keydown-CTRL_RIGHT', function () {
-        var $item = $('<li/>').text('Нажато сочетание клавиш CTRL + стрелка вправо');
-        $result.append($item);
-    });
-
     $tracked.on('keydown-ESC', function () {
         var $item = $('<li/>').text('Нажата клавиша ESC');
         $result.append($item);
     });
 
     $tracked.on('keydown-SPACE', function () {
-        var $item = $('<li/>').text('Нажата клавиша пробел');
+        var $item = $('<li/>').text('Нажата клавиша "Пробел"');
+        $result.append($item);
+    });
+
+    $tracked.on('keydown-PAGEUP', function () {
+        var $item = $('<li/>').text('Нажата клавиша PAGEUP');
+        $result.append($item);
+    });
+
+    $tracked.on('keydown-PAGEDOWN', function () {
+        var $item = $('<li/>').text('Нажата клавиша PAGEDOWN');
         $result.append($item);
     });
 
@@ -81,6 +86,16 @@ $(function () {
 
     $tracked.on('keydown-CTRL_ENTER', function () {
         var $item = $('<li/>').text('Нажато сочетание клавиш CTRL + ENTER');
+        $result.append($item);
+    });
+
+    $tracked.on('keydown-SHIFT_ENTER', function () {
+        var $item = $('<li/>').text('Нажато сочетание клавиш SHIFT + ENTER');
+        $result.append($item);
+    });
+
+    $tracked.on('keydown-ALT_ENTER', function () {
+        var $item = $('<li/>').text('Нажато сочетание клавиш ALT + ENTER');
         $result.append($item);
     });
 });
